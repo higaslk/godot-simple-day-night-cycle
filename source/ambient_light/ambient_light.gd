@@ -4,8 +4,6 @@ extends CanvasModulate
 @export var enabled: bool = false
 @export var gradient_texture: GradientTexture1D
 
-var starting_hour = TimeManager.starting_hour
-
 func _process(_delta: float) -> void:
 	if not enabled: return
 	var current_time = TimeManager.get_hour_time()
