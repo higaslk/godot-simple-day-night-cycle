@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dg7phcoj0gl04"]
+
+[ext_resource type="Texture2D" uid="uid://dft8vhcumy1ae" path="res://assets/Entities/butterfly.png" id="1_r5s2u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5bcp"]
+atlas = ExtResource("1_r5s2u")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbfwl"]
+atlas = ExtResource("1_r5s2u")
+region = Rect2(16, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxj4u"]
+atlas = ExtResource("1_r5s2u")
+region = Rect2(32, 64, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5bcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbfwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxj4u")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 7.0
+}]

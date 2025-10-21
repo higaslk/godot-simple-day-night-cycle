@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpk3iha3nw7ju"]
+
+[ext_resource type="SpriteFrames" uid="uid://dg7phcoj0gl04" path="res://source/resources/butterfly_anim.tres" id="2_cbfwl"]
+[ext_resource type="PackedScene" uid="uid://dlk2e58e38nrb" path="res://source/ambient_light/light_source/light_source.tscn" id="3_cbfwl"]
+
+[sub_resource type="Gradient" id="Gradient_cbfwl"]
+offsets = PackedFloat32Array(0.0136054, 0.265306, 0.612245)
+colors = PackedColorArray(0.542793, 0.635985, 1, 1, 0.126062, 0.148178, 0.311111, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hxj4u"]
+gradient = SubResource("Gradient_cbfwl")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Butterfly" type="CharacterBody2D"]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_cbfwl")
+animation = &"Down"
+autoplay = "Down"
+
+[node name="Light source" parent="." instance=ExtResource("3_cbfwl")]
+scale = Vector2(2.32813, 2.30957)
+color = Color(0.940616, 1, 0.962514, 1)
+texture = SubResource("GradientTexture2D_hxj4u")
+synced_with_time = true

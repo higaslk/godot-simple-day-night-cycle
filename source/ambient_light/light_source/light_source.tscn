@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlk2e58e38nrb"]
+
+[ext_resource type="Texture2D" uid="uid://cpcv3xfgxvmvt" path="res://source/resources/light_sphere_gradient.tres" id="1_583tt"]
+[ext_resource type="Script" uid="uid://s763rlbr1gct" path="res://source/ambient_light/light_source/light_source.gd" id="2_583tt"]
+
+[node name="Light source" type="PointLight2D"]
+scale = Vector2(1.46875, 1.49414)
+shadow_enabled = true
+texture = ExtResource("1_583tt")
+script = ExtResource("2_583tt")

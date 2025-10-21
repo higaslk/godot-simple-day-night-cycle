@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bld4fa8uibf2q"]
+
+[ext_resource type="Script" uid="uid://d2fftvmxxp0we" path="res://source/ambient_light/ambient_light.gd" id="1_wd84i"]
+[ext_resource type="Texture2D" uid="uid://cg3aoqa2rupdp" path="res://source/resources/ambient_gradient.tres" id="2_nafwa"]
+
+[node name="Ambient Light" type="CanvasModulate"]
+script = ExtResource("1_wd84i")
+enabled = true
+gradient_texture = ExtResource("2_nafwa")
